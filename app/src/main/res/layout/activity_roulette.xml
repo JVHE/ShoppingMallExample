@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+    android:layout_centerHorizontal="true"
+    android:layout_marginBottom="30dp"
+    android:id="@+id/linearLayout">
+
+    <Button
+        android:id="@+id/start"
+        android:layout_width="0dp"
+        android:layout_height="55dp"
+        android:layout_weight="1"
+        android:layout_marginHorizontal="20dp"
+        android:background="#dd000000"
+        android:text="룰렛 돌리기" />
+
+</LinearLayout>
+
+    <ImageView
+        android:id="@+id/roulette"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        app:srcCompat="@drawable/roulette" />
+
+    <TextView
+        android:id="@+id/event_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="65dp"
+        android:text="고객감사 매일매일 마일리지 이벤트!!"
+        android:textColor="#000000"
+        android:textSize="25dp"/>
+
+    <!--<TextView-->
+        <!--android:id="@+id/time_limit"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_below="@+id/event_name"-->
+        <!--android:layout_centerHorizontal="true"-->
+        <!--android:textColor="#000000"-->
+        <!--android:textSize="30dp"-->
+        <!--android:text="남은 시간: 10.00초" />-->
+
+    <TextView
+        android:id="@+id/explaination"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/linearLayout"
+        android:layout_centerHorizontal="true"
+        android:text="이벤트 참여 방법\n1. 룰렛 돌리기 버튼을 누릅니다.\n2. 10초 내로 stop 버튼을 누릅니다.\n*10초동안 버튼을 누르지 않으면 자동으로 멈춥니다.\n"
+        android:textColor="#000000"
+        android:textSize="14dp" />
+
+    <ImageView
+        android:id="@+id/pin"
+        android:layout_width="wrap_content"
+        android:layout_height="80dp"
+        android:layout_below="@+id/event_name"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="93dp"
+        app:srcCompat="@drawable/pin" />
+
+
+    <!--<ImageView-->
+        <!--android:id="@+id/roulette"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:src="@drawable/roulette" />-->
+
+</RelativeLayout>

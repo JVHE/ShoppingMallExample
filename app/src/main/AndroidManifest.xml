@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.jshop">
+
+    <uses-sdk
+        android:minSdkVersion="19"
+        android:targetSdkVersion="26" />
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/jshop_logo"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.NoActionBar">
+        <activity
+            android:name=".Splash"
+            android:label="@string/title_activity_splash"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity
+            android:name=".MainActivity"
+            android:windowSoftInputMode="stateAlwaysHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Show"
+            android:label="@string/title_activity_show"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity android:name=".ShoppingBag" />
+        <activity
+            android:name=".Test"
+            android:label="@string/title_activity_test" />
+        <activity android:name=".Login" />
+        <activity android:name=".SignUp" />
+        <activity android:name=".Product" />
+        <activity
+            android:name=".AddProduct"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".MyPage"
+            android:label="@string/title_activity_my_page"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity android:name=".Roulette" />
+        <activity android:name=".LastConfirm"></activity>
+    </application>
+
+</manifest>

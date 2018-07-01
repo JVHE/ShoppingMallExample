@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/jshop_logo" />
+
+        <FrameLayout
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true">
+
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:src="@drawable/shopping_bag" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="7dp" />
+
+                <TextView
+                    android:id="@+id/shopping_bag_count"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="3"
+                    android:textColor="#262020"
+                    android:textSize="10dp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/shopping_bag"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#00ff0000" />
+
+        </FrameLayout>
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/word"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_gravity="bottom"
+            android:layout_weight="1"
+            android:defaultFocusHighlightEnabled="false"
+            android:imeOptions="actionSearch"
+            android:inputType="text"
+            android:shadowColor="#000000"
+            android:textColor="#000000"
+            android:textColorHint="#000000" />
+
+        <Button
+            android:id="@+id/find"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:background="#00ff0000"
+            android:text="Search"
+            android:textColor="#000000" />
+    </LinearLayout>
+
+
+    <ScrollView
+        android:id="@+id/scroll1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:id="@+id/inner_scroll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!--<HorizontalScrollView-->
+            <!--android:id="@+id/scroll2"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent">-->
+
+            <!--<LinearLayout-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:orientation="horizontal">-->
+
+            <!--<ImageButton-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:adjustViewBounds="true"-->
+            <!--android:background="#00ff0000"-->
+            <!--android:baselineAlignBottom="true"-->
+            <!--android:scaleType="centerInside"-->
+            <!--android:src="@drawable/men" />-->
+
+            <!--<ImageButton-->
+            <!--android:id="@+id/imageView"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:adjustViewBounds="true"-->
+            <!--android:background="#00ff0000"-->
+            <!--android:baselineAlignBottom="true"-->
+            <!--android:scaleType="centerInside"-->
+            <!--android:src="@drawable/sale_women" />-->
+
+            <!--<ImageButton-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:adjustViewBounds="true"-->
+            <!--android:background="#00ff0000"-->
+            <!--android:baselineAlignBottom="true"-->
+            <!--android:scaleType="centerInside"-->
+            <!--android:src="@drawable/sale_unisex" />-->
+            <!--</LinearLayout>-->
+            <!--</HorizontalScrollView>-->
+
+
+            <ImageButton
+                android:id="@+id/sale"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:background="#00ff0000"
+                android:baselineAlignBottom="true"
+                android:scaleType="centerInside"
+                android:src="@drawable/sale_unisex" />
+
+            <LinearLayout
+                android:id="@+id/cover"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:orientation="vertical">
+
+                <ExpandableListView
+                    android:id="@+id/sale_category"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:groupIndicator="@null" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="39,000원 이상 결제시 무료 배송"
+                android:textColor="#000000"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="CLOTHES"
+                android:textColor="#000000"
+                android:textSize="26dp"
+                android:textStyle="bold" />
+
+            <ImageButton
+                android:id="@+id/clothes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:background="#00ff0000"
+                android:baselineAlignBottom="true"
+                android:scaleType="fitXY"
+                android:src="@drawable/women" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:text="COLLABORATION"
+                android:textColor="#000000"
+                android:textSize="26dp"
+                android:textStyle="bold" />
+
+            <ImageButton
+                android:id="@+id/collabo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:background="#00ff0000"
+                android:baselineAlignBottom="true"
+                android:scaleType="centerInside"
+                android:src="@drawable/collabo" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:paddingTop="10dp"
+                android:text="제이샵 코리아 | 사업자등록번호: 123-456-78901 | 대표자: 이정배 | 서울특별시 동작구 사당동 318 - 13번지 301 호 |"
+                android:textColor="#000000"
+                android:textSize="15dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:autoLink="phone|email"
+                android:gravity="center"
+                android:text=" 대표번호: 010-5650-9303 | 이메일: adsf2457@naver.com |"
+                android:textColor="#000000"
+                android:textSize="15dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="계좌번호: 우리은행 1002-030-715510 이정배"
+                android:textColor="#000000"
+                android:paddingBottom="10dp"
+                android:textStyle="bold"
+                android:textSize="15dp" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        android:weightSum="4">
+
+        <ImageButton
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#ffffff"
+            android:baselineAlignBottom="true"
+            android:scaleType="fitCenter"
+            android:src="@drawable/goods" />
+
+        <ImageButton
+            android:id="@+id/my_page"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#ffffff"
+            android:scaleType="fitCenter"
+            android:src="@drawable/my_page" />
+
+        <ImageButton
+            android:id="@+id/delivery_tracking"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#ffffff"
+            android:scaleType="fitCenter"
+            android:src="@drawable/delivery_tracking" />
+
+
+        <!--<ImageButton-->
+        <!--android:id="@+id/location"-->
+        <!--android:layout_width="40dp"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:layout_weight="1"-->
+        <!--android:background="#ffffff"-->
+        <!--android:scaleType="fitCenter"-->
+        <!--android:src="@drawable/location" />-->
+
+        <Button
+            android:id="@+id/event"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#ffffff"
+            android:scaleType="fitCenter"
+            android:text="Event"
+            android:textColor="#000000" />
+
+    </LinearLayout>
+</android.support.v7.widget.LinearLayoutCompat>

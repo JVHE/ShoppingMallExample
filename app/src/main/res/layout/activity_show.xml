@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical"
+    tools:context="com.example.jshop.Show">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+
+        <TextView
+            android:id="@+id/search"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:text="검색결과"
+            android:textColor="#000000"
+            android:textSize="30dp"
+            android:textStyle="bold" />
+
+        <FrameLayout
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true">
+
+
+            <ImageView
+                android:id="@+id/test"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:src="@drawable/shopping_bag" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="7dp" />
+
+                <TextView
+                    android:id="@+id/shopping_bag_count"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="3"
+                    android:textColor="#262020"
+                    android:textSize="10dp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/shopping_bag"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#00ff0000" />
+
+        </FrameLayout>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/word"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_gravity="bottom"
+            android:layout_weight="1"
+            android:defaultFocusHighlightEnabled="false"
+            android:imeOptions="actionSearch"
+            android:inputType="text"
+            android:shadowColor="#000000"
+            android:textColor="#000000"
+            android:textColorHint="#000000" />
+
+        <Button
+            android:id="@+id/find"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:background="#00ff0000"
+            android:text="Search"
+            android:textColor="#000000" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/item_list"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+
+    </ListView>
+
+    <LinearLayout
+        android:id="@+id/layout_for_manager"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/add"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="#363636"
+            android:text="제품 추가하기" />
+    </LinearLayout>
+
+    <!--<ScrollView-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content">-->
+
+    <!--<LinearLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:orientation="vertical">-->
+
+
+    <!--<ImageButton-->
+    <!--android:id="@+id/item1"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:adjustViewBounds="true"-->
+    <!--android:background="#00ff0000"-->
+    <!--android:baselineAlignBottom="true"-->
+    <!--android:padding="10dp"-->
+    <!--android:scaleType="centerInside"-->
+    <!--android:src="@drawable/item1" />-->
+
+    <!--<TextView-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_weight="1"-->
+    <!--android:gravity="center"-->
+    <!--android:paddingTop="10dp"-->
+    <!--android:text="리버시블 기모노 재킷\n119,000원"-->
+    <!--android:textColor="#000000"-->
+    <!--android:textSize="17dp" />-->
+
+    <!--<ImageButton-->
+    <!--android:id="@+id/item2"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:adjustViewBounds="true"-->
+    <!--android:background="#00ff0000"-->
+    <!--android:baselineAlignBottom="true"-->
+    <!--android:padding="10dp"-->
+    <!--android:scaleType="centerInside"-->
+    <!--android:src="@drawable/item2" />-->
+
+    <!--<TextView-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_weight="1"-->
+    <!--android:gravity="center"-->
+    <!--android:paddingTop="10dp"-->
+    <!--android:text="에코 퍼 스웨트셔츠\n19,000원"-->
+    <!--android:textColor="#000000"-->
+    <!--android:textSize="17dp" />-->
+
+    <!--<ImageButton-->
+    <!--android:id="@+id/item3"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:adjustViewBounds="true"-->
+    <!--android:background="#00ff0000"-->
+    <!--android:baselineAlignBottom="true"-->
+    <!--android:padding="10dp"-->
+    <!--android:scaleType="centerInside"-->
+    <!--android:src="@drawable/item3" />-->
+
+    <!--<TextView-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_weight="1"-->
+    <!--android:gravity="center"-->
+    <!--android:paddingTop="10dp"-->
+    <!--android:text="리버시블 점퍼\n149,000원"-->
+    <!--android:textColor="#000000"-->
+    <!--android:textSize="17dp" />-->
+
+    <!--<ImageButton-->
+    <!--android:id="@+id/item4"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:adjustViewBounds="true"-->
+    <!--android:background="#00ff0000"-->
+    <!--android:baselineAlignBottom="true"-->
+    <!--android:padding="10dp"-->
+    <!--android:scaleType="centerInside"-->
+    <!--android:src="@drawable/item4" />-->
+
+    <!--<TextView-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_weight="1"-->
+    <!--android:gravity="center"-->
+    <!--android:paddingTop="10dp"-->
+    <!--android:text="봄버 재킷\n99,000원"-->
+    <!--android:textColor="#000000"-->
+    <!--android:textSize="17dp" />-->
+    <!--</LinearLayout>-->
+
+    <!--</ScrollView>-->
+
+
+</LinearLayout>

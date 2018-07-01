@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Jshop</string>
+    <string name="title_activity_show">Show</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="title_activity_test">Test</string>
+    <string name="title_activity_my_page">MyPage</string>
+    <string name="title_activity_splash">Splash</string>
+</resources>
